@@ -1,0 +1,21 @@
+# LLM 모델 설정
+llm:
+  # OpenAI 모델 설정
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.7
+  max_tokens: 2000
+  
+  # 대체 모델 (예산 절약용)
+  fallback_model: gpt-3.5-turbo
+  
+# 임베딩 모델 설정
+embedding:
+  provider: openai
+  model: text-embedding-3-small
+  dimension: 1536
+
+# ReAct 설정
+react:
+  max_iterations: 5
+  thought_timeout: 30  # 초

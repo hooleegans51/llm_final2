@@ -1,0 +1,46 @@
+# 도구 설정
+
+# 활성화된 도구 목록
+enabled_tools:
+  - shopping_search
+  - recipe_search
+  - web_search
+  - calculator
+  - calorie
+  - weather
+  - health_guidelines
+
+# 도구별 설정
+tools:
+  shopping_search:
+    max_results: 10
+    sources:
+      - 쿠팡
+      - 이마트
+      - 마켓컬리
+      - 홈플러스
+  
+  recipe_search:
+    max_results: 5
+    sources:
+      - 만개의레시피
+      - 해먹
+      - 쿡패드
+  
+  web_search:
+    max_results: 5
+    safe_search: true
+  
+  calorie:
+    unit: kcal
+    per_serving: 100  # g
+  
+  weather:
+    default_location: 서울
+    units: metric
+
+# API 키 (환경 변수로 관리 권장)
+api_keys:
+  # NAVER_CLIENT_ID: ${NAVER_CLIENT_ID}
+  # NAVER_CLIENT_SECRET: ${NAVER_CLIENT_SECRET}
+  # GOOGLE_API_KEY: ${GOOGLE_API_KEY}

@@ -1,0 +1,51 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# venv / tooling
+.venv/
+venv/
+.env
+.env.*
+.python-version
+
+# --- OS / Editors ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- RAG data (keep PDFs, ignore vector indexes) ---
+rag/data/vector_store/
+**/chroma/
+**/index/
+**/memory/
+**/*.faiss
+**/*.npy
+**/*.npz
+**/*.pkl
+
+# keep raw PDFs if you store them
+!rag/data/pdfs/**
+rag/data/pdfs/~$*
+
+# --- Cache / Artifacts ---
+.cache/
+dist/
+build/
+outputs/
+artifacts/
+
+# --- Misc ---
+__MACOSX/

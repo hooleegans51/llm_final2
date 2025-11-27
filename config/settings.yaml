@@ -1,0 +1,35 @@
+# 애플리케이션 설정
+
+# 서버 설정
+server:
+  host: "0.0.0.0"
+  port: 7860
+  share: false  # Gradio 공유 링크
+
+# 메모리 설정
+memory:
+  short_memory_size: 10  # 최근 N턴 유지
+  long_memory_threshold: 0.95  # 중복 체크 임계치
+  summary_threshold: 20  # 요약 트리거
+
+# RAG 설정
+rag:
+  top_k: 5
+  db_path: "./chroma_db"
+  collection_name: "recipes"
+
+# 검색 설정
+search:
+  max_results: 10
+  timeout: 10  # 초
+
+# 제약조건 기본값
+defaults:
+  budget: 50000  # 원
+  servings: 2  # 인분
+  max_calories: 800  # kcal
+
+# 로깅
+logging:
+  level: INFO
+  format: "[%(asctime)s] %(levelname)s - %(message)s"

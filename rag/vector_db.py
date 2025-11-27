@@ -11,8 +11,8 @@ from typing import List, Optional
 import chromadb
 from pypdf import PdfReader
 
-from chunker import chunk_document, build_text_splitter, Chunk
-from embedder import embed_texts
+from rag.chunker import chunk_document, build_text_splitter, Chunk
+from rag.embedder import embed_texts
 
 
 # ═══════════════════════════════════════════════════════════════════════════

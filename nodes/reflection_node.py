@@ -13,6 +13,7 @@ from core.state import AgentState
 
 
 def reflection_node(state: AgentState) -> dict:
+    print("[reflection] 진입")
     """
     Reflection 노드
     

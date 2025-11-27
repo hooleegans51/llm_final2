@@ -13,6 +13,7 @@ from nodes.long_memory_node import long_memory_node
 
 
 def memory_writer_node(state: AgentState) -> dict:
+    print("[memory_writer] 진입")
     """
     메모리 조율 노드
     
